@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Sample2Activity">
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="@string/text1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:lineSpacingExtra="20dp"
+            android:textColor="#9C27B0" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="12dp"
+            android:background="#7003A9F4"
+            android:orientation="vertical"
+            tools:context=".Sample2Activity">
+
+            <LinearLayout
+                android:id="@+id/layout_top2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:text="@string/poem"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:lineSpacingExtra="16dp"
+                    android:textColor="#161217"  />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="18dp"
+            android:text="@string/text2"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:lineSpacingExtra="20dp"
+            android:textColor="#161217" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
